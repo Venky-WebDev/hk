@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon - IT Software Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="coming-soon-page">
+        <!-- Header with logo -->
+        <header>
+            <img src="./images/Myhackerzone-logo.png" alt="IT Software Logo" class="logo">
+        </header>
+
+        <!-- Main content with Coming Soon message -->
+        <main>
+            <h1 class="animate-text">New Website Coming Soon</h1>
+             <footer> 
+                <div class="footer-container">
+                    <div class="footer-column">
+                        <h3>United Kingdom</h3>
+                        <p>1, Kingdom street London</p>
+                        <p>UK W26BD</p>
+                        <p>+44 207088251</p>
+                        <p><a href="mailto:info@sprytech.uk">info@sprytech.uk</a></p>
+                    </div>
+                    <div class="footer-column">
+                        <h3>India</h3>
+                        <p>C-20, G-BLOCK,</p>
+                        <p>Bandra Kurla Complex,</p>
+                        <p>Mumbai 400051</p>
+                        <p>+91 9082541019</p>
+                        <p><a href="mailto:info@sprytechglobal.com">info@sprytechglobal.com</a></p>
+                    </div>
+                </div>
+            </footer>
+            
+        </main>
+
+        <!-- Footer with address -->
+
+    </div>
+
+    <script src="countdown.js"></script>
+</body>
+</html>
+<style>
+    /* Global Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #283048, #859398);
+    background-image: url(./images/hacker-bg.png);
+    background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.coming-soon-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 300px;
+    /* animation: logo-bounce 2s infinite; */
+}
+
+/* Main Content Styling */
+main h1 {
+    font-size: 3.5em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 1.5em;
+    color: #ddd;
+    margin-bottom: 40px;
+}
+
+/* Countdown Timer Styling */
+.countdown {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.box {
+    background-color: #1f2a38;
+    color: #fff;
+    padding: 20px;
+    margin: 0 10px;
+    border-radius: 8px;
+    width: 80px;
+    text-align: center;
+}
+
+.box span {
+    font-size: 2.5em;
+    display: block;
+}
+
+.box p {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+/* Footer Styling */
+footer .address {
+    font-size: 1.2em;
+    color: #aaa;
+    margin-top: 30px;
+}
+
+/* Animation Styles */
+@keyframes logo-bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes text-slide-in {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.animate-text {
+    animation: text-slide-in 1.5s ease-out;
+}
+
+.animate-fade {
+    animation: fade-in 2.5s ease-in-out;
+}
+
+/* Footer Styling */
+footer {
+    /* background-color: #1f1f1f; */
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    margin: 20px;
+}
+
+.footer-column h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ffcc00; /* Add a color contrast for headings */
+}
+
+.footer-column p {
+    margin: 5px 0;
+    line-height: 1.6;
+    font-size: 1em;
+}
+
+.footer-column a {
+    color: #ffcc00; /* Email link color */
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+
+</style>
